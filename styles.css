@@ -20,10 +20,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.11), transparent 34rem),
     linear-gradient(180deg, #090909 0%, var(--bg) 32rem);
@@ -603,6 +605,39 @@ h1 {
   max-width: 760px;
 }
 
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: min(var(--max), calc(100% - 32px));
+  margin: 0 auto 34px;
+  padding: 26px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+}
+
+.site-footer strong {
+  display: block;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.site-footer p {
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.site-footer a {
+  flex: 0 0 auto;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: #d8d8d8;
+  font-size: 13px;
+}
+
 [data-animate] {
   opacity: 0;
   transition:
@@ -709,13 +744,19 @@ h1 {
   .site-header {
     height: auto;
     padding: 14px 0;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: stretch;
     gap: 12px;
   }
 
+  .brand {
+    justify-content: center;
+  }
+
   .nav-links {
-    max-width: 58vw;
-    justify-content: flex-end;
+    width: 100%;
+    max-width: none;
+    justify-content: center;
     flex-wrap: wrap;
     border-radius: 8px;
   }
@@ -725,11 +766,31 @@ h1 {
   }
 
   .hero-section {
-    padding-top: 42px;
+    width: min(var(--max), calc(100% - 24px));
+    padding-top: 34px;
+    gap: 34px;
   }
 
   h1 {
-    font-size: clamp(44px, 14vw, 64px);
+    font-size: clamp(36px, 11.5vw, 52px);
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-copy p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .section-block {
+    width: min(var(--max), calc(100% - 24px));
+    padding: 62px 0;
+  }
+
+  .section-heading h2,
+  .contact-section h2 {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.06;
   }
 
   .project-grid,
@@ -742,12 +803,38 @@ h1 {
   }
 
   .contact-section {
+    width: min(var(--max), calc(100% - 24px));
     flex-direction: column;
     align-items: flex-start;
     padding: 26px;
+    margin-bottom: 48px;
   }
 
   .code-window {
     overflow-x: auto;
+  }
+
+  .hero-panel {
+    width: 100%;
+  }
+
+  .workflow-item {
+    grid-template-columns: 30px 1fr;
+  }
+
+  .workflow-board::before {
+    left: 16px;
+  }
+
+  [data-animate="slide-left"],
+  [data-animate="slide-right"] {
+    transform: translateY(28px);
+  }
+
+  .site-footer {
+    width: min(var(--max), calc(100% - 24px));
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
   }
 }
