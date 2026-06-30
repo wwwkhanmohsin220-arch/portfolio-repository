@@ -2,6 +2,25 @@ const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+const themeToggle = document.querySelector(".theme-toggle");
+const root = document.documentElement;
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+const preferredTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+root.dataset.theme = savedTheme || preferredTheme;
+
+const updateThemeLabel = () => {
+  const isLight = root.dataset.theme === "light";
+  themeToggle?.setAttribute("aria-label", isLight ? "Switch to dark mode" : "Switch to light mode");
+};
+
+themeToggle?.addEventListener("click", () => {
+  root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+  localStorage.setItem("portfolio-theme", root.dataset.theme);
+  updateThemeLabel();
+});
+
+updateThemeLabel();
 
 const observer = new IntersectionObserver(
   (entries) => {
