@@ -1,281 +1,174 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Muhammad Mohsin - Automation Portfolio</title>
+    <title>Muhammad Mohsin - AI Automation Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of AI automation, n8n workflows, scraper bots, Discord bots, and ML audio tools by Muhammad Mohsin."
+      content="Portfolio of Muhammad Mohsin: AI automation, n8n workflows, scraper bots, chatbots, and ML audio tools."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top" aria-label="Muhammad Mohsin portfolio home">
-          <span>Muhammad Mohsin</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#stack">Skills</a>
+    <div class="dot-grid" aria-hidden="true"></div>
+    <div class="light-rays" aria-hidden="true"></div>
+
+    <main class="site-shell">
+      <header class="topbar" data-animate>
+        <a href="#top" class="small-brand">Muhammad Mohsin</a>
+        <nav aria-label="Primary navigation">
+          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#workflows">n8n</a>
           <a href="#contact">Contact</a>
         </nav>
-        <button class="theme-toggle" type="button" aria-label="Switch color theme">
-          <span class="theme-icon" aria-hidden="true"></span>
+        <button class="theme-toggle" type="button" aria-label="Switch theme">
+          <span></span>
         </button>
       </header>
 
-      <main id="top">
-        <section class="hero-section">
-          <div class="hero-bg" aria-hidden="true">
-            <div class="ray ray-one"></div>
-            <div class="ray ray-two"></div>
-            <div class="grid-plane"></div>
-          </div>
+      <section id="top" class="hero" data-animate>
+        <div class="hero-copy">
+          <p class="status-pill"><span></span> Available for automation projects</p>
+          <h1>Hi, I'm <span class="gradient-name">Muhammad Mohsin</span> 👋</h1>
+          <p class="hero-text">
+            I build AI automation systems, n8n workflows, scraper bots, chatbot
+            integrations, and practical tools that connect data, APIs, and people.
+          </p>
+        </div>
+        <div class="avatar" aria-label="Muhammad Mohsin avatar">MM</div>
+      </section>
 
-          <div class="hero-copy" data-animate="slide-up">
-            <a class="announcement" href="#projects">
-              <span class="pulse"></span>
-              Shipping automation systems, agents, and scrapers
-            </a>
-            <p class="hero-name">Muhammad Mohsin</p>
-            <h1>AI automation portfolio for bots, workflows, and data extraction.</h1>
-            <p>
-              I build practical tools that connect chat, email, scraping, search,
-              n8n automations, and machine learning into working systems.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#projects">View projects</a>
-              <a class="button secondary" href="#contact">Work with me</a>
-            </div>
-          </div>
+      <section id="about" class="section" data-animate>
+        <h2>About</h2>
+        <p>
+          I focus on building useful automation systems with clean workflows and
+          secure project setup. My work includes Discord and Telegram bots, Gmail
+          automation, scraping pipelines, n8n agents, Flask APIs, and packaged ML
+          tools.
+        </p>
+      </section>
 
-          <div class="hero-panel" aria-label="Project deployment preview" data-animate="slide-left">
-            <div class="panel-topbar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="code-window">
-              <div class="code-row muted">portfolio.deploy()</div>
-              <div class="code-row"><span class="line-num">01</span> projects = [</div>
-              <div class="code-row"><span class="line-num">02</span> "Discord Email Assistant",</div>
-              <div class="code-row"><span class="line-num">03</span> "Ultimate Query Parser",</div>
-              <div class="code-row"><span class="line-num">04</span> "Telegram n8n Assistant",</div>
-              <div class="code-row"><span class="line-num">05</span> "Waveformer Extractor"</div>
-              <div class="code-row"><span class="line-num">06</span> ]</div>
-              <div class="status-strip">
-                <span class="status-dot"></span>
-                online - sanitized repos - credentials excluded
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="logo-strip" aria-label="Project categories" data-animate="slide-up">
+      <section id="skills" class="section" data-animate>
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Technologies I use to ship automation and bot projects.</p>
+        </div>
+        <div class="pill-grid">
+          <span>Python</span>
+          <span>n8n</span>
+          <span>AI Automation</span>
+          <span>Web Scraping</span>
           <span>Discord Bots</span>
-          <span>n8n Workflows</span>
-          <span>Scraper Systems</span>
-          <span>ML Audio</span>
+          <span>Telegram Bots</span>
           <span>Flask APIs</span>
-        </section>
+          <span>Gmail API</span>
+          <span>Prompt Engineering</span>
+          <span>Data Extraction</span>
+          <span>Playwright</span>
+          <span>PyTorch</span>
+        </div>
+      </section>
 
-        <section id="stack" class="section-block">
-          <div class="section-heading" data-animate="slide-up">
-            <p class="eyebrow">Skills set</p>
-            <h2>Tools I use to connect systems.</h2>
-          </div>
+      <section id="projects" class="section" data-animate>
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Selected builds from my automation portfolio.</p>
+        </div>
 
-          <div class="stack-grid">
-            <div class="stack-tile" data-animate="slide-up">
-              <span>01</span>
-              <strong>Automation</strong>
-              <p>n8n, webhooks, workflow exports, bot triggers, scheduled tasks.</p>
-            </div>
-            <div class="stack-tile" data-animate="slide-up">
-              <span>02</span>
-              <strong>AI agents</strong>
-              <p>Gemini, RAG prompts, tool calling, assistant routing, chat UX.</p>
-            </div>
-            <div class="stack-tile" data-animate="slide-up">
-              <span>03</span>
-              <strong>Scraping</strong>
-              <p>Playwright, structured extraction, vendor strategies, parsers.</p>
-            </div>
-            <div class="stack-tile" data-animate="slide-up">
-              <span>04</span>
-              <strong>Apps</strong>
-              <p>Python, Flask, Discord.py, Gmail API, desktop packaging.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="section-block">
-          <div class="section-heading" data-animate="slide-up">
-            <p class="eyebrow">Selected builds</p>
-            <h2>Projects built around useful automation.</h2>
-            <p>
-              Each project is structured to be shareable without leaking tokens,
-              OAuth files, local credentials, or private runtime data.
-            </p>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card featured" data-animate="slide-up">
-              <div class="project-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M7.5 8.5h9a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H15l-3 2.5-3-2.5H7.5a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3Z" />
-                  <path d="M8.5 13h.01M15.5 13h.01" />
-                </svg>
-              </div>
-              <div class="card-kicker">Discord + Gmail + Gemini</div>
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-icon">✦</div>
+            <div>
               <h3>Discord Email Assistant Bot</h3>
               <p>
-                A chat assistant that drafts emails, searches Gmail, manages
-                contacts, schedules sends, handles attachments, and sends receipt
-                images after approval.
+                Gemini-powered Discord assistant for drafting emails, Gmail search,
+                contact management, scheduling, attachments, and receipt generation.
               </p>
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Discord.py</span>
-                <span>Gmail API</span>
-                <span>Gemini</span>
-              </div>
-            </article>
+            </div>
+            <span>Python</span>
+          </article>
 
-            <article class="project-card" data-animate="slide-up">
-              <div class="project-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 6.5h16M4 12h10M4 17.5h7" />
-                  <path d="m15.5 15.5 4 4M17.5 12.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
-                </svg>
-              </div>
-              <div class="card-kicker">NLP + scraping</div>
+          <article class="project-row">
+            <div class="project-icon">⌁</div>
+            <div>
               <h3>Ultimate Query Parser</h3>
               <p>
-                A Flask parser that corrects natural-language queries, detects
-                domains, extracts metadata fields, and routes jobs or product
-                searches to scraping strategies.
+                Natural-language query parser that corrects requests, detects
+                domains, extracts metadata, and routes scraping strategies.
               </p>
-              <div class="tag-row">
-                <span>Flask</span>
-                <span>Transformers</span>
-                <span>Playwright</span>
-              </div>
-            </article>
+            </div>
+            <span>Flask</span>
+          </article>
 
-            <article class="project-card" data-animate="slide-up">
-              <div class="project-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 12h5M15 12h5M12 4v5M12 15v5" />
-                  <path d="M9 9h6v6H9z" />
-                  <path d="M4 4h4v4H4zM16 4h4v4h-4zM4 16h4v4H4zM16 16h4v4h-4z" />
-                </svg>
-              </div>
-              <div class="card-kicker">n8n automation</div>
-              <h3>Telegram Personal Assistant</h3>
+          <article class="project-row">
+            <div class="project-icon">◎</div>
+            <div>
+              <h3>Telegram n8n Assistant</h3>
               <p>
-                A Telegram-triggered n8n assistant workflow for chat automation,
-                tool routing, and response delivery through Telegram nodes.
+                Sanitized Telegram-triggered n8n workflow for assistant-style chat
+                automation and response routing.
               </p>
-              <div class="tag-row">
-                <span>n8n</span>
-                <span>Telegram</span>
-                <span>Agents</span>
-              </div>
-            </article>
+            </div>
+            <span>n8n</span>
+          </article>
 
-            <article class="project-card" data-animate="slide-up">
-              <div class="project-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 13h2l1.5-4 3 8 3-10 2.5 6H20" />
-                  <path d="M4 18h16M4 6h16" />
-                </svg>
-              </div>
-              <div class="card-kicker">ML audio app</div>
-              <h3>Waveformer Targeted Voice Extractor</h3>
+          <article class="project-row">
+            <div class="project-icon">⌬</div>
+            <div>
+              <h3>Waveformer Voice Extractor</h3>
               <p>
-                A packaged desktop-oriented audio extraction project where the
-                public release can expose runnable artifacts without revealing
-                private source code.
+                Packaged ML audio extraction project designed for artifact-only
+                release without exposing private source code.
               </p>
-              <div class="tag-row">
-                <span>Audio ML</span>
-                <span>PyTorch</span>
-                <span>Desktop</span>
-              </div>
-            </article>
-          </div>
-        </section>
+            </div>
+            <span>ML</span>
+          </article>
+        </div>
+      </section>
 
-        <section id="workflows" class="section-block split-section">
-          <div class="section-heading compact" data-animate="slide-right">
-            <p class="eyebrow">Workflow library</p>
-            <h2>n8n agents and scraper bots.</h2>
-            <p>
-              A set of sanitized workflow exports for agents, RAG, job scraping,
-              search, calendar, email, weather, and alerting workflows.
-            </p>
+      <section id="workflows" class="section" data-animate>
+        <div class="section-title">
+          <h2>n8n Workflow Library</h2>
+          <p>Automation exports sanitized without credential blocks.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <time>RAG</time>
+            <strong>RAG Agent and Pipeline</strong>
+            <p>Retrieval workflows for guided Q&A and knowledge-based assistants.</p>
           </div>
+          <div class="timeline-item">
+            <time>Scraping</time>
+            <strong>Job Scraper Workflows</strong>
+            <p>Automations for listing collection, metadata extraction, and alerts.</p>
+          </div>
+          <div class="timeline-item">
+            <time>Agents</time>
+            <strong>Search, Weather, Calendar, Email</strong>
+            <p>Utility agents for daily tasks, notifications, and workflow routing.</p>
+          </div>
+        </div>
+      </section>
 
-          <div class="workflow-board" data-animate="slide-left">
-            <div class="workflow-item" data-animate="slide-left">
-              <span class="node"></span>
-              <div>
-                <strong>RAG Agent</strong>
-                <p>Retrieval workflow for guided Q&A experiences.</p>
-              </div>
-            </div>
-            <div class="workflow-item" data-animate="slide-left">
-              <span class="node"></span>
-              <div>
-                <strong>Job Scraper</strong>
-                <p>Scraper flows for collecting listings and metadata.</p>
-              </div>
-            </div>
-            <div class="workflow-item" data-animate="slide-left">
-              <span class="node"></span>
-              <div>
-                <strong>Government Schemes Alert</strong>
-                <p>Monitoring and notification workflow for public updates.</p>
-              </div>
-            </div>
-            <div class="workflow-item" data-animate="slide-left">
-              <span class="node"></span>
-              <div>
-                <strong>Search Tool</strong>
-                <p>Utility workflow for searching and routing results.</p>
-              </div>
-            </div>
-            <div class="workflow-item" data-animate="slide-left">
-              <span class="node"></span>
-              <div>
-                <strong>Weather Agent</strong>
-                <p>Weather-aware automation and response flow.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <section id="contact" class="contact-card" data-animate>
+        <p class="label">Contact</p>
+        <h2>Want to build a bot, workflow, or scraper?</h2>
+        <p>
+          Send me a clear idea and I can help turn it into a working automation
+          system.
+        </p>
+        <a href="https://github.com/wwwkhanmohsin220-arch" target="_blank" rel="noreferrer">
+          View GitHub
+        </a>
+      </section>
 
-        <section id="contact" class="contact-section" data-animate="slide-up">
-          <div>
-            <p class="eyebrow">Available for builds</p>
-            <h2>Need a workflow, bot, or scraper that actually ships?</h2>
-          </div>
-          <a class="button primary" href="https://github.com/wwwkhanmohsin220-arch">View GitHub</a>
-        </section>
-
-        <footer class="site-footer" data-animate="slide-up">
-          <div>
-            <strong>Muhammad Mohsin</strong>
-            <p>AI automation, n8n workflows, scraper bots, and ML tools.</p>
-          </div>
-          <a href="#top">Back to top</a>
-        </footer>
-      </main>
-    </div>
+      <footer class="footer" data-animate>
+        <span>Muhammad Mohsin</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </main>
 
     <script src="script.js"></script>
   </body>
